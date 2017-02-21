@@ -1,0 +1,4 @@
+# Write your MySQL query statement below
+select p1.Name AS 'Employee'
+from Employee as p1,Employee p2
+where ifnull(p1.ManagerId,0)=p2.id and p1.Salary>p2.Salary

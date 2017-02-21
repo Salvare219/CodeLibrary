@@ -1,0 +1,10 @@
+select if(count(*)=0,null,Salary) AS 'SecondHighestSalary' 
+from 
+(SELECT Salary FROM Employee UNION SELECT NULL 
+ORDER BY Salary DESC LIMIT 1,1)j
+
+
+#SELECT Salary 'SecondHighestSalary' FROM 
+#(SELECT Salary FROM Employee UNION SELECT NULL 
+#ORDER BY Salary DESC LIMIT 1,1)j
+

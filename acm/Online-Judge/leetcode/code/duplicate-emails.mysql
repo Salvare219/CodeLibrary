@@ -1,0 +1,8 @@
+ SELECT DISTINCT a.Email
+ FROM Person a
+ WHERE EXISTS(
+     SELECT 1
+     FROM Person b
+     WHERE a.Email = b.Email
+     LIMIT 1, 1
+ )
