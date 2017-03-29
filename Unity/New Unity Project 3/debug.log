@@ -1,0 +1,2 @@
+[0117/215956:ERROR:file_io.cc(30)] read: expected 54712, observed 0
+[0117/215956:ERROR:crash_report_database_win.cc(443)] failed to read records
